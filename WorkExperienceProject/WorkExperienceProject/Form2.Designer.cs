@@ -46,8 +46,9 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(12, 289);
+            this.panel1.Location = new System.Drawing.Point(12, 663);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(256, 51);
             this.panel1.TabIndex = 1;
@@ -58,10 +59,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkRed;
-            this.ClientSize = new System.Drawing.Size(800, 352);
+            this.ClientSize = new System.Drawing.Size(884, 726);
             this.Controls.Add(this.panel1);
             this.Name = "Form2";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "2nd Page";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.panel1.ResumeLayout(false);

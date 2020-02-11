@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Flurl;
+using Flurl.Http;
+using Newtonsoft.Json;
 
 namespace WorkExperienceProject
 {
@@ -34,5 +37,111 @@ namespace WorkExperienceProject
         {
 
         }
+        public async Task<Rootobject> testget2(string classA)
+        {
+            try
+            {
+                var getClassesObject = await $"http://dnd5eapi.co/api/classes/{classA}".GetAsync();
+                var jsonOfClases = JsonConvert.DeserializeObject<Rootobject>(getClassesObject.Content.ReadAsStringAsync().Result);
+
+                return jsonOfClases;
+            }
+            catch (Exception E)
+            {
+                MessageBox.Show(E.Message);
+                return null;
+            }
+
+        }
+
+        private void Barbarian_Click(object sender, EventArgs e)
+        {
+            string Barbarian = "Barbarian";
+            string BarbarianHP = @"Hit Points
+Hit Dice: 1d12 per Barbarian level
+Hit Points at 1st Level: 12 + your Constitution modifier
+Hit Points at Higher Levels: 1d12(or 7) + your Constitution modifier per Barbarian level after 1st";
+
+            string BarbarianProficiencies = @"Proficiencies
+Armor: Light Armor, Medium Armor, Shields Weapons: Simple Weapons, Martial Weapons Tools: None
+Saving Throws: Strength, Constitution
+Skills: Choose two from Animal Handling, Athletics, Intimidation, Nature, Perception, and Survival";
+
+            string BarbarianEquipment = @"Equipment
+You start with the following Equipment, in addition to the Equipment granted by your background:
+(a) a Greataxe or (b) any martial melee weapon
+(a) two handaxes or (b) any simple weapon
+An explorer’s pack and four javelins.";
+
+
+
+
+            NameTag.Text = Barbarian;
+            HitPoints.Text = BarbarianHP;
+            Proficencies.Text = BarbarianProficiencies;
+            Equipment.Text = BarbarianEquipment;
+        }
+
+        private void Bard_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Cleric_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Druid_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Fighter_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Monk_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Paladin_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Ranger_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Rogue_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Sorcerer_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Warlock_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Wizard_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Levels_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("");
+        }
+
+
     }
 }
