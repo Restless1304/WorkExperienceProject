@@ -103,7 +103,7 @@
             this.Barbarian.TabIndex = 6;
             this.Barbarian.Text = "Barbarian";
             this.Barbarian.UseVisualStyleBackColor = true;
-            this.Barbarian.Click += new System.EventHandler(this.button4_Click);
+            this.Barbarian.Click += new System.EventHandler(this.Barbarian_Click);
             // 
             // button5
             // 

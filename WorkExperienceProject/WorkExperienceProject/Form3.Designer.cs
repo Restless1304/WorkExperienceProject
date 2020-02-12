@@ -47,6 +47,9 @@
             this.Proficencies = new System.Windows.Forms.Label();
             this.Equipment = new System.Windows.Forms.Label();
             this.Levels = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.DND = new System.Windows.Forms.Button();
+            this.GOOGLE = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -239,12 +242,46 @@
             this.Levels.UseVisualStyleBackColor = true;
             this.Levels.Click += new System.EventHandler(this.Levels_Click);
             // 
+            // textBox1
+            // 
+            this.textBox1.AcceptsReturn = true;
+            this.textBox1.Location = new System.Drawing.Point(624, 526);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(200, 20);
+            this.textBox1.TabIndex = 36;
+            this.textBox1.TabStop = false;
+            this.textBox1.WordWrap = false;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // DND
+            // 
+            this.DND.Location = new System.Drawing.Point(668, 581);
+            this.DND.Name = "DND";
+            this.DND.Size = new System.Drawing.Size(119, 23);
+            this.DND.TabIndex = 37;
+            this.DND.Text = "Search DND Beyond";
+            this.DND.UseVisualStyleBackColor = true;
+            this.DND.Click += new System.EventHandler(this.DND_Click);
+            // 
+            // GOOGLE
+            // 
+            this.GOOGLE.Location = new System.Drawing.Point(668, 552);
+            this.GOOGLE.Name = "GOOGLE";
+            this.GOOGLE.Size = new System.Drawing.Size(119, 23);
+            this.GOOGLE.TabIndex = 38;
+            this.GOOGLE.Text = "Search Google";
+            this.GOOGLE.UseVisualStyleBackColor = true;
+            this.GOOGLE.Click += new System.EventHandler(this.GOOGLE_Click);
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkRed;
             this.ClientSize = new System.Drawing.Size(884, 726);
+            this.Controls.Add(this.GOOGLE);
+            this.Controls.Add(this.DND);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.Levels);
             this.Controls.Add(this.Equipment);
             this.Controls.Add(this.Proficencies);
@@ -294,6 +331,9 @@
         private System.Windows.Forms.Label Proficencies;
         private System.Windows.Forms.Label Equipment;
         private System.Windows.Forms.Button Levels;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button DND;
+        private System.Windows.Forms.Button GOOGLE;
     }
 }
 

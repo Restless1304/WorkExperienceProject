@@ -30,6 +30,7 @@
         {
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Roll = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,12 +55,24 @@
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // Roll
+            // 
+            this.Roll.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.Roll.Location = new System.Drawing.Point(288, 298);
+            this.Roll.Name = "Roll";
+            this.Roll.Size = new System.Drawing.Size(292, 57);
+            this.Roll.TabIndex = 3;
+            this.Roll.Text = "Roll the Dice.";
+            this.Roll.UseVisualStyleBackColor = true;
+            this.Roll.Click += new System.EventHandler(this.Roll_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkRed;
             this.ClientSize = new System.Drawing.Size(884, 726);
+            this.Controls.Add(this.Roll);
             this.Controls.Add(this.panel1);
             this.Name = "Form2";
             this.ShowIcon = false;
@@ -74,6 +87,7 @@
         #endregion
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button Roll;
     }
 }
 

@@ -10,11 +10,13 @@ using System.Windows.Forms;
 using Flurl;
 using Flurl.Http;
 using Newtonsoft.Json;
+using System.Diagnostics;
 
 namespace WorkExperienceProject
 {
     public partial class Form3 : Form
     {
+        public string SearchURL = "";
         public Form3()
         {
             InitializeComponent();
@@ -137,11 +139,47 @@ An explorer’s pack and four javelins.";
 
         }
 
-        private void Levels_Click(object sender, EventArgs e)
+        private async void Levels_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("");
+            var barb = await testget2("cleric");
+
+            string ProfNames = string.Empty;
+
+            for (int i = 0; i < barb.proficiency_choices.Length; i++)
+            {
+                for (int j = 0; j < barb.proficiency_choices[i].from.Length; j++)
+                {
+                    ProfNames += barb.proficiency_choices[i].from[j].name;
+                    ProfNames += Environment.NewLine;
+                }
+            }
+            MessageBox.Show(ProfNames + "test");
+
+        }
+        static void SearchGOOGLE(string term)
+        {
+            Process.Start("https://www.google.com/search?q=" + term);
+        }
+        static void SearchDND(string term)
+        {
+            Process.Start("https://www.dndbeyond.com/search?q=" + term);
         }
 
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            string UserInput = textBox1.Text;
+           
+        }
 
+        private void GOOGLE_Click(object sender, EventArgs e)
+        {
+            SearchGOOGLE("test");
+        }
+
+        private void DND_Click(object sender, EventArgs e)
+        {
+            SearchDND("test");
+        }
     }
 }
+

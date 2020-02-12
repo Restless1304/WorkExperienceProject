@@ -7,6 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
+
+
+
+
+
 
 namespace WorkExperienceProject
 {
@@ -33,6 +39,10 @@ namespace WorkExperienceProject
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+        private void Roll_Click(object sender, EventArgs e)
+        {
+            Process.Start(@"C:\Users\WILL.LAPSLEY\Desktop\DiceRoller-master\DiceRoller\DiceRoller.exe");
         }
     }
 }

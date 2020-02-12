@@ -82,24 +82,7 @@ namespace WorkExperienceProject
             testget(string.Empty);
 
         }
-        private async void button4_Click(object sender, EventArgs e)
-        {
-            var getClasses = "";
-           var barb = await testget2("barbarian");
 
-            string ProfNames = string.Empty;
-
-            for (int i = 0; i < barb.proficiency_choices.Length; i++)
-            {
-                for (int j = 0; j < barb.proficiency_choices[i].from.Length; j++)
-                {
-                    ProfNames += barb.proficiency_choices[i].from[j].name;
-                    ProfNames += Environment.NewLine;
-                }
-            }
-            Label1.Text = ProfNames;
-            pictureBox1.Image =Image.FromFile(@"C:\Users\WILL.LAPSLEY\Desktop\WorkExperienceProject\WorkExperienceProject\Resources\Barbarian1.png") ;
-        }
         private async void button5_Click(object sender, EventArgs e)
         {
             var barb = await testget2("bard");
@@ -287,6 +270,34 @@ namespace WorkExperienceProject
             Label1.Text = ProfNames;
             pictureBox1.Image = Image.FromFile(@"C:\Users\WILL.LAPSLEY\Desktop\WorkExperienceProject\WorkExperienceProject\Resources\Wizard.png");
         }
+
+        private async void Barbarian_Click(object sender, EventArgs e)
+        {
+           getBarbarianImage();
+        }
+        private async void getBarbarianImage() 
+        {
+            var barb = await testget2("barbarian");
+
+            string ProfNames = string.Empty;
+
+            for (int i = 0; i < barb.proficiency_choices.Length; i++)
+            {
+                for (int j = 0; j < barb.proficiency_choices[i].from.Length; j++)
+                {
+                    ProfNames += barb.proficiency_choices[i].from[j].name;
+                    ProfNames += Environment.NewLine;
+                }
+            }
+            Label1.Text = ProfNames;
+            DisplayImage(@"C:\Users\WILL.LAPSLEY\Desktop\WorkExperienceProject\WorkExperienceProject\Resources\Barbarian1.png");
+        }
+        private async void DisplayImage(string ImageFile)
+        {
+            pictureBox1.Image = Image.FromFile(ImageFile);
+
+
+        }
     }
 
     public class Classlist
@@ -367,6 +378,7 @@ namespace WorkExperienceProject
         {
             public string url { get; set; }
             public string name { get; set; }
+            public From[] from { get; set; }
         }
         public class SpellCasting
         {
