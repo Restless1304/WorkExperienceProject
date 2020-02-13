@@ -49,7 +49,7 @@ namespace WorkExperienceProject
         }
         private void button3_Click(object sender, EventArgs e)
         {
-            testget(string.Empty);
+          testget(string.Empty);
         }
         public async Task<string> testget(string classA)
         {
@@ -89,226 +89,91 @@ namespace WorkExperienceProject
 
         }
 
-        private async void button5_Click(object sender, EventArgs e)
+        private void button5_Click(object sender, EventArgs e)
         {
-            var barb = await testget2("bard");
-
-            string ProfNames = string.Empty;
-
-            for (int i = 0; i < barb.proficiency_choices.Length; i++)
-            {
-                for (int j = 0; j < barb.proficiency_choices[i].from.Length; j++)
-                {
-                    ProfNames += barb.proficiency_choices[i].from[j].name;
-                    ProfNames += Environment.NewLine;
-                }
-            }
-            Label1.Text = ProfNames;
-            pictureBox1.Image = Image.FromFile(@"C:\Users\WILL.LAPSLEY\Desktop\WorkExperienceProject\WorkExperienceProject\Resources\Bardpic.png");
+            getData("bard");
+            DisplayImage(@"C:\Users\WILL.LAPSLEY\Desktop\WorkExperienceProject\WorkExperienceProject\Resources\Bardpic.png");
         }
-        private async void button6_Click(object sender, EventArgs e)
+        private void button6_Click(object sender, EventArgs e)
         {
-            var barb = await testget2("cleric");
-
-            string ProfNames = string.Empty;
-
-            for (int i = 0; i < barb.proficiency_choices.Length; i++)
-            {
-                for (int j = 0; j < barb.proficiency_choices[i].from.Length; j++)
-                {
-                    ProfNames += barb.proficiency_choices[i].from[j].name;
-                    ProfNames += Environment.NewLine;
-                }
-            }
-            Label1.Text = ProfNames;
-            pictureBox1.Image = Image.FromFile(@"C:\Users\WILL.LAPSLEY\Desktop\WorkExperienceProject\WorkExperienceProject\Resources\Clericpic.png");
+            getData("cleric");
+            DisplayImage(@"C:\Users\WILL.LAPSLEY\Desktop\WorkExperienceProject\WorkExperienceProject\Resources\Clericpic.png");
         }
-        private async void Druid_Click(object sender, EventArgs e)
+        private void Druid_Click(object sender, EventArgs e)
         {
-            var barb = await testget2("druid");
-
-            string ProfNames = string.Empty;
-
-            for (int i = 0; i < barb.proficiency_choices.Length; i++)
-            {
-                for (int j = 0; j < barb.proficiency_choices[i].from.Length; j++)
-                {
-                    ProfNames += barb.proficiency_choices[i].from[j].name;
-                    ProfNames += Environment.NewLine;
-                }
-            }
-            Label1.Text = ProfNames;
-            pictureBox1.Image = Image.FromFile(@"C:\Users\WILL.LAPSLEY\Desktop\WorkExperienceProject\WorkExperienceProject\Resources\Druid.png");
+            getData("druid");
+            DisplayImage(@"C:\Users\WILL.LAPSLEY\Desktop\WorkExperienceProject\WorkExperienceProject\Resources\Druid.png");
         }
-        private async void Fighter_Click(object sender, EventArgs e)
+        private void Fighter_Click(object sender, EventArgs e)
         {
-            var barb = await testget2("fighter");
-
-            string ProfNames = string.Empty;
-
-            for (int i = 0; i < barb.proficiency_choices.Length; i++)
-            {
-                for (int j = 0; j < barb.proficiency_choices[i].from.Length; j++)
-                {
-                    ProfNames += barb.proficiency_choices[i].from[j].name;
-                    ProfNames += Environment.NewLine;
-                }
-            }
-            Label1.Text = ProfNames;
-            pictureBox1.Image = Image.FromFile(@"C:\Users\WILL.LAPSLEY\Desktop\WorkExperienceProject\WorkExperienceProject\Resources\Fighter.png");
+            getData("fighter");
+            DisplayImage(@"C:\Users\WILL.LAPSLEY\Desktop\WorkExperienceProject\WorkExperienceProject\Resources\Fighter.png");
         }
-        private async void Monk_Click(object sender, EventArgs e)
+        private void Monk_Click(object sender, EventArgs e)
         {
-            var barb = await testget2("monk");
-
-            string ProfNames = string.Empty;
-
-            for (int i = 0; i < barb.proficiency_choices.Length; i++)
-            {
-                for (int j = 0; j < barb.proficiency_choices[i].from.Length; j++)
-                {
-                    ProfNames += barb.proficiency_choices[i].from[j].name;
-                    ProfNames += Environment.NewLine;
-                }
-            }
-            Label1.Text = ProfNames;
-            pictureBox1.Image = Image.FromFile(@"C:\Users\WILL.LAPSLEY\Desktop\WorkExperienceProject\WorkExperienceProject\Resources\Monk.png");
+            getData("monk");
+            DisplayImage(@"C:\Users\WILL.LAPSLEY\Desktop\WorkExperienceProject\WorkExperienceProject\Resources\Monk.png");
         }
-        private async void Paladin_Click(object sender, EventArgs e)
+        private void Paladin_Click(object sender, EventArgs e)
         {
-            var barb = await testget2("paladin");
-
-            string ProfNames = string.Empty;
-
-            for (int i = 0; i < barb.proficiency_choices.Length; i++)
-            {
-                for (int j = 0; j < barb.proficiency_choices[i].from.Length; j++)
-                {
-                    ProfNames += barb.proficiency_choices[i].from[j].name;
-                    ProfNames += Environment.NewLine;
-                }
-            }
-            Label1.Text = ProfNames;
-            pictureBox1.Image = Image.FromFile(@"C:\Users\WILL.LAPSLEY\Desktop\WorkExperienceProject\WorkExperienceProject\Resources\Paladin.png");
+            getData("paladin");
+            DisplayImage(@"C:\Users\WILL.LAPSLEY\Desktop\WorkExperienceProject\WorkExperienceProject\Resources\Paladin.png");
         }
-        private async void Ranger_Click(object sender, EventArgs e)
+        private void Ranger_Click(object sender, EventArgs e)
         {
-            var barb = await testget2("ranger");
-
-            string ProfNames = string.Empty;
-
-            for (int i = 0; i < barb.proficiency_choices.Length; i++)
-            {
-                for (int j = 0; j < barb.proficiency_choices[i].from.Length; j++)
-                {
-                    ProfNames += barb.proficiency_choices[i].from[j].name;
-                    ProfNames += Environment.NewLine;
-                }
-            }
-            Label1.Text = ProfNames;
-            pictureBox1.Image = Image.FromFile(@"C:\Users\WILL.LAPSLEY\Desktop\WorkExperienceProject\WorkExperienceProject\Resources\Ranger.png");
+        getData("ranger");
+        DisplayImage(@"C:\Users\WILL.LAPSLEY\Desktop\WorkExperienceProject\WorkExperienceProject\Resources\Ranger.png");
         }
-        private async void Rogue_Click(object sender, EventArgs e)
+        private void Rogue_Click(object sender, EventArgs e)
         {
-            var barb = await testget2("rogue");
-
-            string ProfNames = string.Empty;
-
-            for (int i = 0; i < barb.proficiency_choices.Length; i++)
-            {
-                for (int j = 0; j < barb.proficiency_choices[i].from.Length; j++)
-                {
-                    ProfNames += barb.proficiency_choices[i].from[j].name;
-                    ProfNames += Environment.NewLine;
-                }
-            }
-            Label1.Text = ProfNames;
-            pictureBox1.Image = Image.FromFile(@"C:\Users\WILL.LAPSLEY\Desktop\WorkExperienceProject\WorkExperienceProject\Resources\Rogue.png");
+            getData("rogue");
+            DisplayImage(@"C:\Users\WILL.LAPSLEY\Desktop\WorkExperienceProject\WorkExperienceProject\Resources\Rogue.png");
         }
-        private async void Sorcerer_Click(object sender, EventArgs e)
+        private void Sorcerer_Click(object sender, EventArgs e)
         {
-            var barb = await testget2("sorcerer");
-
-            string ProfNames = string.Empty;
-
-            for (int i = 0; i < barb.proficiency_choices.Length; i++)
-            {
-                for (int j = 0; j < barb.proficiency_choices[i].from.Length; j++)
-                {
-                    ProfNames += barb.proficiency_choices[i].from[j].name;
-                    ProfNames += Environment.NewLine;
-                }
-            }
-            Label1.Text = ProfNames;
-            pictureBox1.Image = Image.FromFile(@"C:\Users\WILL.LAPSLEY\Desktop\WorkExperienceProject\WorkExperienceProject\Resources\Sorcerer.png");
+         getData("sorcerer");
+         DisplayImage(@"C:\Users\WILL.LAPSLEY\Desktop\WorkExperienceProject\WorkExperienceProject\Resources\Sorcerer.png");
         }
-        private async void Warlock_Click(object sender, EventArgs e)
+        private void Warlock_Click(object sender, EventArgs e)
         {
-            var barb = await testget2("warlock");
-
-            string ProfNames = string.Empty;
-
-            for (int i = 0; i < barb.proficiency_choices.Length; i++)
-            {
-                for (int j = 0; j < barb.proficiency_choices[i].from.Length; j++)
-                {
-                    ProfNames += barb.proficiency_choices[i].from[j].name;
-                    ProfNames += Environment.NewLine;
-                }
-            }
-            Label1.Text = ProfNames;
-            pictureBox1.Image = Image.FromFile(@"C:\Users\WILL.LAPSLEY\Desktop\WorkExperienceProject\WorkExperienceProject\Resources\Warlock.png");
+            getData("warlock");
+         DisplayImage(@"C:\Users\WILL.LAPSLEY\Desktop\WorkExperienceProject\WorkExperienceProject\Resources\Warlock.png");
         }
-        private async void Wizard_Click(object sender, EventArgs e)
+        private void Wizard_Click(object sender, EventArgs e)
         {
-            var barb = await testget2("wizard");
-
-            string ProfNames = string.Empty;
-
-            for (int i = 0; i < barb.proficiency_choices.Length; i++)
-            {
-                for (int j = 0; j < barb.proficiency_choices[i].from.Length; j++)
-                {
-                    ProfNames += barb.proficiency_choices[i].from[j].name;
-                    ProfNames += Environment.NewLine;
-                }
-            }
-            Label1.Text = ProfNames;
-            pictureBox1.Image = Image.FromFile(@"C:\Users\WILL.LAPSLEY\Desktop\WorkExperienceProject\WorkExperienceProject\Resources\Wizard.png");
+            getData("wizard");
+            DisplayImage(@"C:\Users\WILL.LAPSLEY\Desktop\WorkExperienceProject\WorkExperienceProject\Resources\Wizard.png");
         }
 
-        private async void Barbarian_Click(object sender, EventArgs e)
+        private  void Barbarian_Click(object sender, EventArgs e)
         {
-           getBarbarianImage();
+           getData("barbarian");
+           DisplayImage(@"C:\Users\WILL.LAPSLEY\Desktop\WorkExperienceProject\WorkExperienceProject\Resources\Barbarian1.png");
         }
-        private async void getBarbarianImage() 
-        {
-            var barb = await testget2("barbarian");
-
-            string ProfNames = string.Empty;
-
-            for (int i = 0; i < barb.proficiency_choices.Length; i++)
-            {
-                for (int j = 0; j < barb.proficiency_choices[i].from.Length; j++)
-                {
-                    ProfNames += barb.proficiency_choices[i].from[j].name;
-                    ProfNames += Environment.NewLine;
-                }
-            }
-            Label1.Text = ProfNames;
-            DisplayImage(@"C:\Users\WILL.LAPSLEY\Desktop\WorkExperienceProject\WorkExperienceProject\Resources\Barbarian1.png");
-        }
-        private async void DisplayImage(string ImageFile)
+        private void DisplayImage(string ImageFile)
         {
             pictureBox1.Image = Image.FromFile(ImageFile);
-
-
         }
+        private async void getData(string input)
+        {
+         var Data1  = await testget2(input);
+          
+            string Data2 = string.Empty;
 
+            foreach (var i in Data1.proficiency_choices)
+            {
+                foreach (var j in i.from)
+                {
+                    Data2 += j.name;
+                    Data2 += Environment.NewLine;
+                }
+                Label1.Text = Data2;
+            }
+        }
 
     }
 
-    public class Classlist
+        public class Classlist
         {
             public int Count
             {
