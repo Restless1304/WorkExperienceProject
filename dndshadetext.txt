@@ -1,0 +1,244 @@
+ShadeCLASS & LEVELRogue 1EXPERIENCE POINTS0PLAYER NAMErestlessRACELightfoot HalflingBACKGROUNDSpyCAMPAIGN or PLAYER IDidkSAVING THROWSSKILLSPASSIVE WISDOM
+(PERCEPTION)PROFICIENCIES & LANGUAGESSTR+010DEX+317CON+214INT+113WIS-18CHA+113+2PROFICIENCY
+BONUS+0 Strength Saves 
++5 Dexterity Saves *
++2 Constitution Saves 
++3 Intelligence Saves *
+-1 Wisdom Saves 
++1 Charisma Saves 
+* Prof. bonus added
++3  Acrobatics (Dex)
+-1  Animal Handling (Wis)
++1  Arcana (Int)
++2  Athletics (Str) *
++3  Deception (Cha) *
++1  History (Int)
++1  Insight (Wis) *
++1  Intimidation (Cha)
++1  Investigation (Int)
+-1  Medicine (Wis)
++1  Nature (Int)
++1  Perception (Wis) *
++1  Performance (Cha)
++1  Persuasion (Cha)
++1  Religion (Int)
++7  Sleight of Hand (Dex) **
++7  Stealth (Dex) **
+-1  Survival (Wis)
+
+* Prof. bonus added
+11
+Armor: light armor
+
+Weapons: simple weapons, hand crossbow, longsword, rapier, shortsword
+
+Tools: disguise kit, thieves tools
+
+Saving Throws: Dexterity, Intelligence
+
+Skills: Athletics, Deception, Insight, Perception, Sleight of Hand, Stealth
+
+Languages: Common, Thieves' Cant, Halfling
+
+ARMOR
+CLASS
+(AC)14Armor Worn: Leather armorINITIATIVE+3SPEED25 ft.HIT POINTS10HIT DICE1d8DEATH SAVES:   Success  O O O   Fail  O O OWEAPON & UNARMED ATTACKS
+Basic Attack. One target per Attack action.
+
+Rapier. Melee Weapon Attack: +5 to hit, reach 5 ft. Hit: 1d8+3 piercing damage.
+
+Shortbow. Ranged Weapon Attack: +5 to hit. Hit: 1d6+3 piercing damage. (Normal range to 80 ft.; disadvantage long range 81 to 320 ft. Must be used two-handed.)
+
+Dagger. Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. 1d4+3 piercing damage. (If thrown, normal range to 20 ft.; disadvantage long range 21 to 60 ft.)
+
+MAGIC & SPECIAL ATTACKS
+Sneak Attack: Once per turn, deal extra damage to one creature hit if attack with advantage using finesse or ranged weapon. Don't need advantage if an enemy of the target is within 5 feet of it, enemy isn't incapacitated, and you don't have disadvantage on attack.
+
+EQUIPMENT & TREASURECarried Gear: leather armor (AC 11), rapier, two (2) daggers, shortbow and 20 arrows, belt pouch, crowbar, set of dark common clothes including a hood
+
+Lifting and Carrying: 150 lbs. max. carrying capacity; 300 lbs. pushing or dragging (speed -5 ft.); 300 lbs. max. lift.
+
+Coins & Gems: 12 gold pieces (gp); 63 silver pieces (sp); 61 copper pieces (cp); 2 gems (worth 10 gp each)
+FEATURES, TRAITS & MORE
+Alignment: Chaotic Neutral. I follow my shifting whims with little concern about rules or later consequences.
+
+
+Lightfoot Halfling Traits [PHB p. 26]
+
+• Age: 22 years old
+
+• Small Size (2' 11", 39 lbs.)
+
+• Brave (adv. fear saves)
+
+• Halfling Nimbleness (through occupied spaces)
+
+• Lucky (reroll 1s on d20s)
+
+• Naturally Stealthy (hide behind others)
+
+
+Rogue Class Features [PHB p. 94]
+
+• Expertise (prof. noted with **)
+
+• Sneak Attack (+1d6)
+
+• Thieves' Cant (slang speak in code)
+
+
+
+Spy Features [PHB p. 129]
+
+• Criminal Contact
+
+FAST CHARACTER
+fastcharacter.com
+
+
+Name: Shade
+Race: Lightfoot Halfling
+Class & Level: Rogue 1
+Background: Spy
+Alignment: Chaotic Neutral
+Experience: 0 xp
+
+
+ABILITY SCORES & ABILITIES
+(* includes +2 proficiency bonus; ** includes expertise, if any)
+
+Strength 8
+-1 ... Strength Ability Checks
+-1 ... Strength Saving Throws
+-1 ... Athletics Skill
+120 lbs. ... Maximum Carrying Capacity
+240 lbs. ... Max. Push or Drag (Speed -5 ft.)
+240 lbs. ... Maximum Lift
+
+Dexterity 17
++3 ... Dexterity Ability Checks
++5 ... Dexterity Saving Throws *
++5 ... Acrobatics Skill  *
++7 ... Sleight of Hand Skill  **
++7 ... Stealth Skill  **
+
+
+Constitution 14
++2 ... Constitution Ability Checks
++2 ... Constitution Saving Throws
+
+Intelligence 13
++1 ... Intelligence Ability Checks
++3 ... Intelligence Saving Throws *
++1 ... Arcana Skill
++1 ... History Skill
++3 ... Investigation Skill  *
++1 ... Nature Skill
++1 ... Religion Skill
+
+Wisdom 10
++0 ... Wisdom Ability Checks
++0 ... Wisdom Saving Throws
++0 ... Animal Handling Skill
++0 ... Insight Skill
++0 ... Medicine Skill
++2 ... Perception Skill  *
++0 ... Survival Skill
+
+Charisma 13
++1 ... Charisma Ability Checks
++1 ... Charisma Saving Throws
++3 ... Deception Skill  *
++1 ... Intimidation Skill
++1 ... Performance Skill
++3 ... Persuasion Skill  *
+
+COMBAT [PHB p. 189]
+
+12 ... Passive Perception
++3 ... Initiative Modifier
+
+Armor Class 14 ... Armor worn: Leather armor
+
+25 ft. Speed ... Base distance per move
+
+10 hit points ... 1d8 Hit Dice
+
+
+Rapier. Melee Weapon Attack: +5 to hit, reach 5 ft. Hit: 1d8+3 piercing damage.
+
+
+Shortbow. Ranged Weapon Attack: +5 to hit. Hit: 1d6+3 piercing damage. (Normal range to 80 ft.; disadvantage long range 81 to 320 ft. Must be used two-handed.)
+
+
+Dagger. Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. 1d4+3 piercing damage. (If thrown, normal range to 20 ft.; disadvantage long range 21 to 60 ft.)
+
+
+Sneak Attack: Once per turn, deal extra damage to one creature hit if attack with advantage using finesse or ranged weapon. Don't need advantage if an enemy of the target is within 5 feet of it, enemy isn't incapacitated, and you don't have disadvantage on attack.
+
+
+FEATURES, TRAITS, SPECIAL ABILITIES
+
+Proficiencies & Languages
+• Proficiency Bonus: +2
+• Armor: light armor
+• Weapons: simple weapons, hand crossbow, longsword, rapier, shortsword
+• Tools: disguise kit, thieves tools
+• Saving Throws: Dexterity, Intelligence
+• Skills: Acrobatics, Deception, Investigation, Perception, Persuasion, Sleight of Hand, Stealth
+• Languages: Common, Thieves' Cant, Halfling
+
+
+Lightfoot Halfling Traits [PHB p. 26]
+
+• Age: 50 years old
+
+• Small Size (2' 10", 38 lbs.)
+
+• Brave (adv. fear saves)
+
+• Halfling Nimbleness (through occupied spaces)
+
+• Lucky (reroll 1s on d20s)
+
+• Naturally Stealthy (hide behind others)
+
+
+Rogue Class Features [PHB p. 94]
+
+• Expertise (prof. noted with **)
+
+• Sneak Attack (+1d6)
+
+• Thieves' Cant (slang speak in code)
+
+
+
+Spy Features [PHB p. 129]
+
+• Criminal Contact
+
+
+EQUIPMENT & TREASURE
+
+
+Carried Gear: leather armor (AC 11), rapier, two (2) daggers, shortbow and 20 arrows, belt pouch, crowbar, set of dark common clothes including a hood
+
+
+Coins & Gems: 8 gold pieces (gp); 72 silver pieces (sp); 49 copper pieces (cp); 3 gems (worth 10 gp each)
+
+
+
+ 
+
+REFERENCE
+
+
+[PHB] = page number reference to the Dungeons & Dragons Player's Handbook (5th edition) by Mike Mearls and Jeremy Crawford, published August 19, 2014, by Wizards of the Coast (ISBN-10: 0786965606; ISBN-13: 978-0786965601). [VGtM] = Volo's Guide To Monsters (ISBN 9780786966073), available from a gaming store near you.
+[EEPG] = Elemental Evil Player's Companion, available for download from https://dnd.wizards.com/products/tabletop-games/rpg-products/player's-companion
+
+
+
+Wizards of the Coast, Magic: The Gathering, and their logos are trademarks of Wizards of the Coast LLC in the United States and other countries. © 2009 Wizards. All Rights Reserved.
+
+This Web site is not affiliated with, endorsed, sponsored, or specifically approved by Wizards of the Coast LLC. This Web site may use the trademarks and other intellectual property of Wizards of the Coast LLC, which is permitted under Wizards' Fan Site Policy. For example, DUNGEONS & DRAGONS®, D&D®, PLAYER'S HANDBOOK 2®, and DUNGEON MASTER'S GUIDE® are trademark[s] of Wizards of the Coast and D&D® core rules, game mechanics, characters and their distinctive likenesses are the property of the Wizards of the Coast. For more information about Wizards of the Coast or any of Wizards' trademarks or other intellectual property, please visit their website at www.wizards.com.
