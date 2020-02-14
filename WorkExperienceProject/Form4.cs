@@ -81,49 +81,165 @@ namespace WorkExperienceProject
 
         private void DragonBorn_Click(object sender, EventArgs e)
         {
-            testing("dragonborn");
+            if (Lingo.Checked)
+            {
+                Lang("dragonborn");
+            }
+            if (Size.Checked)
+            {
+                SizeDesc("dragonborn");
+            }
+            if (alignment.Checked)
+            {
+                Aligment("dragonborn");
+            }
+            Namess("Dragonborn");
         }
 
         private void Dwarf_Click(object sender, EventArgs e)
         {
-            testing("dwarf");
+            if (Lingo.Checked)
+            {
+                Lang("dwarf");
+            }
+            if (Size.Checked)
+            {
+                SizeDesc("dwarf");
+            }
+            if (alignment.Checked)
+            {
+                Aligment("dwarf");
+            }
+            Namess("Dwarf");
         }
 
         private void Elf_Click(object sender, EventArgs e)
         {
-            testing("elf");
+            if (Lingo.Checked)
+            {
+                Lang("elf");
+            }
+            if (Size.Checked)
+            {
+                SizeDesc("elf");
+            }
+            if (alignment.Checked)
+            {
+                Aligment("elf");
+            }
+            Namess("Elf");
         }
 
         private void Gnome_Click(object sender, EventArgs e)
         {
-            testing("gnome");
+            if (Lingo.Checked)
+            {
+                Lang("gnome");
+            }
+            if (Size.Checked)
+            {
+                SizeDesc("gnome");
+            }
+            if (alignment.Checked)
+            {
+                Aligment("gnome");
+            }
+            Namess("Gnome");
         }
 
         private void HalfElf_Click(object sender, EventArgs e)
         {
-            testing("half-elf");
+            if (Lingo.Checked)
+            {
+                Lang("half-elf");
+            }
+            if (Size.Checked)
+            {
+                SizeDesc("half-elf");
+            }
+            if (alignment.Checked)
+            {
+                Aligment("half-elf");
+            }
+            Namess("Half-Elf");
         }
 
         private void HalfOrc_Click(object sender, EventArgs e)
         {
-            testing("half-orc");
+            if (Lingo.Checked)
+            {
+                Lang("half-orc");
+            }
+            if (Size.Checked)
+            {
+                SizeDesc("half-orc");
+            }
+            if (alignment.Checked)
+            {
+                Aligment("half-orc");
+            }
+            Namess("Half-Orc");
         }
 
         private void Halfling_Click(object sender, EventArgs e)
         {
-            testing("halfling");
+            if (Lingo.Checked)
+            {
+                Lang("halfling");
+            }
+            if (Size.Checked)
+            {
+                SizeDesc("halfling");
+            }
+            if (alignment.Checked)
+            {
+                Aligment("halfling");
+            }
+            Namess("Halfing");
         }
 
         private void Human_Click(object sender, EventArgs e)
         {
-            testing("human");
+            if (Lingo.Checked)
+            {
+                Lang("human");
+            }
+            if (Size.Checked)
+            {
+                SizeDesc("human");
+            }
+            if (alignment.Checked)
+            {
+                Aligment("human");
+            }
+            Namess("Human");
         }
 
         private void Tiefling_Click(object sender, EventArgs e)
         {
-            testing("tiefling");
+            if (Lingo.Checked)
+            {
+                Lang("tiefling");
+            }
+            if (Size.Checked)
+            {
+                SizeDesc("tiefling");
+            }
+            if (alignment.Checked)
+            {
+                Aligment("tiefling");
+            }
+            Namess("Tiefling");
         }
-        private async void testing (string input)
+        private void Namess(string input2)
+        {
+            string name1 = string.Empty;
+            name1 += input2;
+            Nametxt.Text = name1;
+
+
+        }
+        private async void Lang (string input)
         {
             var test = await TestGetRequest2(input);
             string test2 = string.Empty;
@@ -132,12 +248,51 @@ namespace WorkExperienceProject
             Testing10.Text = test.language_desc;
 
         }
-        private void Lingo_CheckedChanged(object sender, EventArgs e)
+        private async void Aligment(string input)
         {
-        
-        
+            var test = await TestGetRequest2(input);
+            string test2 = string.Empty;
+
+            test.alignment += test2;
+            Testing10.Text = test.alignment;
 
         }
+        private async void SizeDesc (string input)
+        {
+            var test = await TestGetRequest2(input);
+            string test2 = string.Empty;
+
+            test.size_description += test2;
+            Testing10.Text = test.size_description;
+
+        }
+        private async void Lag(string input)
+        {
+            var test = await TestGetRequest2(input);
+            string test2 = string.Empty;
+
+            test.language_desc += test2;
+            Testing10.Text = test.language_desc;
+
+        }
+
+            private void Lingo_CheckedChanged(object sender, EventArgs e)
+        {
+            Size.Checked=(false);
+            alignment.Checked = (false);
+        }
+        private void alignment_CheckedChanged(object sender, EventArgs e)
+        {
+            Size.Checked = (false);
+            Lingo.Checked = (false);
+        }
+
+        private void Size_CheckedChanged(object sender, EventArgs e)
+        {
+            Lingo.Checked = (false);
+            alignment.Checked = (false);
+        }
+
         public class ListRaces
         {
             public int Count
@@ -220,8 +375,6 @@ namespace WorkExperienceProject
             public string url { get; set; }
             public string name { get; set; }
         }
-
-
     }
 
 }

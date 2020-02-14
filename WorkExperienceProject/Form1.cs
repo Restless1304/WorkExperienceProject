@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using Flurl;
 using Flurl.Http;
 using Newtonsoft.Json;
+using System.Diagnostics;
 
 namespace WorkExperienceProject
 {
@@ -35,10 +36,7 @@ namespace WorkExperienceProject
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            Form3 temp = new Form3();
-            temp.Region = this.Region;
-            temp.Show();
-            this.Hide();
+            Process.Start("https://www.dndbeyond.com/sources/basic-rules");
         }
         private void RacesLink_Click(object sender, EventArgs e)
         {

@@ -42,8 +42,11 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.Testing10 = new System.Windows.Forms.RichTextBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.TestGetRequest = new System.Windows.Forms.Button();
+            this.alignment = new System.Windows.Forms.CheckBox();
+            this.Size = new System.Windows.Forms.CheckBox();
             this.Lingo = new System.Windows.Forms.CheckBox();
+            this.TestGetRequest = new System.Windows.Forms.Button();
+            this.Nametxt = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -163,27 +166,63 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.Testing10);
-            this.panel2.Location = new System.Drawing.Point(382, 29);
+            this.panel2.Location = new System.Drawing.Point(382, 68);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(455, 630);
+            this.panel2.Size = new System.Drawing.Size(455, 426);
             this.panel2.TabIndex = 11;
             // 
             // Testing10
             // 
-            this.Testing10.Location = new System.Drawing.Point(3, 3);
+            this.Testing10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.5F);
+            this.Testing10.Location = new System.Drawing.Point(3, 2);
             this.Testing10.Name = "Testing10";
             this.Testing10.ReadOnly = true;
-            this.Testing10.Size = new System.Drawing.Size(449, 627);
+            this.Testing10.Size = new System.Drawing.Size(449, 421);
             this.Testing10.TabIndex = 2;
             this.Testing10.Text = "";
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.alignment);
+            this.panel3.Controls.Add(this.Size);
             this.panel3.Controls.Add(this.Lingo);
             this.panel3.Location = new System.Drawing.Point(12, 139);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(346, 520);
             this.panel3.TabIndex = 12;
+            // 
+            // alignment
+            // 
+            this.alignment.AutoSize = true;
+            this.alignment.Location = new System.Drawing.Point(13, 122);
+            this.alignment.Name = "alignment";
+            this.alignment.Size = new System.Drawing.Size(72, 17);
+            this.alignment.TabIndex = 17;
+            this.alignment.Text = "Alignment";
+            this.alignment.UseVisualStyleBackColor = true;
+            this.alignment.CheckedChanged += new System.EventHandler(this.alignment_CheckedChanged);
+            // 
+            // Size
+            // 
+            this.Size.AutoSize = true;
+            this.Size.Location = new System.Drawing.Point(13, 85);
+            this.Size.Name = "Size";
+            this.Size.Size = new System.Drawing.Size(49, 17);
+            this.Size.TabIndex = 16;
+            this.Size.Text = "Size ";
+            this.Size.UseVisualStyleBackColor = true;
+            this.Size.CheckedChanged += new System.EventHandler(this.Size_CheckedChanged);
+            // 
+            // Lingo
+            // 
+            this.Lingo.AutoSize = true;
+            this.Lingo.Location = new System.Drawing.Point(13, 50);
+            this.Lingo.Name = "Lingo";
+            this.Lingo.Size = new System.Drawing.Size(79, 17);
+            this.Lingo.TabIndex = 15;
+            this.Lingo.Text = "Languages";
+            this.Lingo.UseVisualStyleBackColor = true;
+            this.Lingo.CheckedChanged += new System.EventHandler(this.Lingo_CheckedChanged);
             // 
             // TestGetRequest
             // 
@@ -197,16 +236,15 @@
             this.TestGetRequest.UseVisualStyleBackColor = false;
             this.TestGetRequest.Click += new System.EventHandler(this.TestGetRequest_Click);
             // 
-            // Lingo
+            // Nametxt
             // 
-            this.Lingo.AutoSize = true;
-            this.Lingo.Location = new System.Drawing.Point(13, 50);
-            this.Lingo.Name = "Lingo";
-            this.Lingo.Size = new System.Drawing.Size(79, 17);
-            this.Lingo.TabIndex = 15;
-            this.Lingo.Text = "Langauges";
-            this.Lingo.UseVisualStyleBackColor = true;
-            this.Lingo.CheckedChanged += new System.EventHandler(this.Lingo_CheckedChanged);
+            this.Nametxt.AutoSize = true;
+            this.Nametxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 28F);
+            this.Nametxt.Location = new System.Drawing.Point(377, 10);
+            this.Nametxt.Name = "Nametxt";
+            this.Nametxt.Size = new System.Drawing.Size(122, 44);
+            this.Nametxt.TabIndex = 18;
+            this.Nametxt.Text = "label1";
             // 
             // Form4
             // 
@@ -214,6 +252,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkRed;
             this.ClientSize = new System.Drawing.Size(884, 726);
+            this.Controls.Add(this.Nametxt);
             this.Controls.Add(this.TestGetRequest);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -237,6 +276,7 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -257,6 +297,9 @@
         private System.Windows.Forms.Button TestGetRequest;
         private System.Windows.Forms.RichTextBox Testing10;
         private System.Windows.Forms.CheckBox Lingo;
+        private System.Windows.Forms.CheckBox Size;
+        private System.Windows.Forms.CheckBox alignment;
+        private System.Windows.Forms.Label Nametxt;
     }
 }
 
